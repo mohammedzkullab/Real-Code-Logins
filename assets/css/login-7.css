@@ -1,0 +1,125 @@
+.container{
+    padding: 0;
+}
+
+
+body {
+    font-family: "Rubik", sans-serif;
+    
+  }
+  .heading {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    opacity: 87%;
+  }
+  .sub-heading {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #000;
+    opacity: 87%;
+  }
+  .form-group input,
+  .sub-btn {
+    height: 56px;
+    width: 400px;
+    border: none;
+    outline: none !important;
+  }
+  .form-group{
+      position: relative;
+  }
+  .form-group input {
+    background: #eceef0; 
+    width: 99%;
+  }
+  .pho{
+      position: absolute;
+      top: 23px;
+      right: 19px;
+      display: none;
+  }
+  .form-group input::placeholder {
+    color: #a9a9a9;
+  }
+  .valid-feedback.feedback-icon,
+  .invalid-feedback.feedback-icon {
+      position: absolute;
+      width: auto;
+      bottom: 18px;
+      right: 17px;
+      margin-top: 0;
+      
+  }
+ 
+  
+  .under-form p {
+    font-size: 14px;
+  }
+  .link {
+    color: #3a86ff;
+  }
+  .footer {
+    justify-content: space-around !important;
+  }
+  .footer a {
+    color: #b3b7b8;
+  }
+  .footer a:hover {
+      color: #727575;
+      text-decoration: none;
+    }
+
+   /*media queries */
+
+/*576px breakpoint*/
+@media (max-width: 576px) {
+    .heading{
+        font-size: 28px;
+    }
+   .sub-heading{
+       font-size: 14px;
+       padding: 0 25px;
+   }
+   .form-container{
+       width: 71%;
+       margin: auto !important;
+   }
+   .form-row{
+       margin-top: 20px;
+   }
+  
+  }
+  
+  /*360px breakpoint*/
+  @media (max-width:475px){
+ 
+.heading {
+    font-size: 27px;
+
+  }
+  .sub-heading {
+    font-size: 12px;
+  }
+  .footer{
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column !important;
+  }
+ .footer a {
+     margin: 10px !important ;
+     text-align: center;
+
+ }
+ .under-form{
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+    text-align: center !important;
+}
+.under-form p {
+    margin: 10px !important;
+}
+}

@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+.cont {
+  overflow-x: hidden !important;
+}
+
+.cont,
+.row,
+.right-side,
+.left-side {
+  height: 100vh;
+}
+.right-side {
+  background: #effdff;
+}
+.vector {
+  height: 94vh;
+}
+.heading {
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+}
+.sub-heading {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.44px;
+}
+.form-group {
+  width: 88%;
+}
+.form-group input {
+  outline: none !important;
+  border-right: none !important;
+  border-top: none;
+  border-left: none;
+}
+.forgot {
+  font-size: 12px;
+  color: #3a86ff;
+}
+.sub-btn {
+  background: #3a86ff;
+  height: 48px;
+  padding: 7px 55px;
+  border-radius: 8px;
+}
+
+.social-link {
+  border: 1px solid #eceef0;
+  border-radius: 4px;
+  padding: 11px 40px;
+  margin-right: 4px;
+  color: #fff;
+  opacity: 87%;
+  width: 33% !important;
+}
+.social-link:hover {
+  color: #fff;
+}
+.social,
+.under-form {
+  width: 90%;
+}
+.form-container form {
+  width: 65%;
+}
+.g {
+  background: #fb5607;
+}
+.g:hover {
+  background: #db4e0c;
+}
+.tw {
+  background: #589aff;
+}
+.tw:hover {
+  background: #4787e7;
+}
+.fb {
+  background: #4f5a68;
+}
+.fb:hover {
+  background: #444e5a;
+}
+.down-content,
+.left-footer a {
+  font-size: 12px;
+  color: #212121;
+  opacity: 87%;
+}
+
+/*media queries */
+
+/*1200px breakpoint*/
+@media (max-width: 1200px) {
+  /*left side */
+
+  /*right side */
+  .vector img {
+    width: 320px;
+  }
+}
+
+/*960px breakpoint*/
+@media (max-width: 960px) {
+  /*left side */
+  .sub-btn {
+    padding: 7px 23px;
+  }
+  .sub-heading {
+    width: 100% !important;
+  }
+  /*right-side*/
+  .vector img {
+    width: 305px;
+  }
+  .down-content,
+  .left-footer a {
+    font-size: 10px;
+  }
+}
+
+/*768px breakpoint*/
+@media (max-width: 767px) {
+  /*left side */
+
+  /*right side */
+  .down-content,
+  .left-footer a,
+  .right-side {
+    display: none !important;
+  }
+  .form-container form,
+  .social {
+    align-items: center !important;
+    text-align: center;
+  }
+  .social {
+    justify-content: center !important;
+    width: 100%;
+  }
+  .form-container form {
+    width: 70%;
+  }
+}
+/*500px breakpoint*/
+@media (max-width: 500px) {
+  .heading {
+    font-size: 28px;
+  }
+  .sub-heading {
+    font-size: 14px;
+  }
+
+  .sub-btn {
+    padding: 7px 15px;
+    font-size: 14px;
+  }
+  .form-container form {
+    width: 80%;
+  }
+  .social-link {
+    padding: 11px 22px;
+  }
+}
+
+/*400px breakpoint*/
+@media (max-width: 400px) {
+  .form-container form {
+    width: 90%;
+  }
+}

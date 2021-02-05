@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.cont {
+  background: linear-gradient(100deg, #fff 50%, rgba(40, 54, 70, 1) 50%);
+  height: 100vh !important;
+}
+.main-cont {
+  height: 86vh;
+}
+
+.form-main-heading {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+  opacity: 87%;
+}
+.form-sub-heading {
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+  opacity: 87%;
+}
+.form-group input {
+  height: 56px;
+  border-radius: 8px;
+  background: #eceef0;
+  border: none;
+  outline: none !important;
+}
+.form-group input::placeholder {
+  color: #a9a9a9;
+}
+.forgot {
+  font-size: 12px;
+  color: #3a86ff;
+}
+.sub-btn {
+  background: #3a86ff;
+  height: 48px;
+  padding: 7px 27px;
+  border-radius: 8px;
+}
+.social-link {
+  border: 1px solid #eceef0;
+  border-radius: 4px;
+  padding: 11px 35px;
+  margin-right: 4px;
+  color: #283646;
+  opacity: 87%;
+  font-weight: 500;
+}
+
+/**right-side*/
+.right-main-heading {
+  font-size: 24px;
+}
+.right-sub-heading {
+  font-size: 12px;
+  font-weight: 400;
+}
+.sign-up-btn {
+  border: 1px solid #ffebe0;
+  border-radius: 8px;
+  padding: 14px 33px;
+  font-size: 16px;
+}
+.sign-up-btn:hover {
+  color: rgba(255, 255, 255, 1);
+}
+.right-main-heading,
+.right-sub-heading,
+.sign-up-btn {
+  text-align: center;
+  color: #ffffff;
+  opacity: 87%;
+}
+.sm-hide {
+  display: flex;
+}
+.sm-show {
+  display: none;
+}
+.hidden-btn,
+.hidden-btn:hover {
+  color: rgba(40, 54, 70, 1);
+  border-color: rgba(40, 54, 70, 1);
+}
+
+
+/*Media Quries */
+
+/*768px Breakpoint*/
+@media (max-width: 768px) {
+  .sm-hide {
+    display: none;
+  }
+  .sm-show {
+    display: block;
+  }
+  .cont {
+    background: #fff;
+  }
+
+  .main-cont {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .form-cont {
+    margin: auto !important;
+  }
+}
+
+/*400px Breakpoint*/
+@media (max-width: 400px) {
+  .nav {
+    padding: 30px !important;
+  }
+  .form-sub-heading,
+  .forgot {
+    font-size: 10px;
+  }
+  .nav svg {
+    width: 90px;
+  }
+  .sign-up-btn {
+    padding: 7px 17px;
+    font-size: 14px;
+  }
+}

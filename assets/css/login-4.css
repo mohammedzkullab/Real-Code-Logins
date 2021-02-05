@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.wrapper {
+  background-color: #3a86ff;
+  opacity: 80%;
+  height: 100vh;
+
+}
+.main-cont {
+  height: 94vh;
+}
+.form-container {
+  background: #fff;
+  padding: 47px;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px #00000033;
+}
+.heading {
+  font-size: 36px;
+  letter-spacing: 0.25px;
+}
+.sub-heading {
+  font-size: 16px;
+  letter-spacing: 0.44px;
+}
+.form-group {
+  width: 88%;
+}
+.form-group input {
+  outline: none !important;
+  border-right: none !important;
+  border-top: none;
+  border-left: none;
+}
+.forgot {
+    font-size: 12px;
+    color: #3a86ff;
+  }
+  .sub-btn {
+    background: #3a86ff;
+    height: 48px;
+    padding: 7px 27px;
+    border-radius: 8px;
+  }
+
+.social-link {
+  border: 1px solid #eceef0;
+  border-radius: 4px;
+  padding: 11px 35px;
+  margin-right: 4px;
+  color: #283646;
+  opacity: 87%;
+  font-weight: 500;
+}
+footer {
+  padding: 0 40px;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  opacity: 87%;
+}
+
+/*Media Quries */
+
+/*960px Breakpoint*/
+@media (max-width:960px){
+    .main-cont{
+        flex-direction: column !important;
+    }
+    .main-cont .logo{
+        margin-top: 20px;
+    }
+    .main-cont .form-container{
+        margin-top: 0!important;
+    }
+}
+
+/*450px Breakpoint*/
+@media (max-width:400px){
+
+    .main-cont .form-container{
+        padding: 43px 9px;
+    }
+    .heading{
+        font-size: 28px;
+    }
+    .sub-heading{
+        font-size: 14px;
+    }
+}
+/*350px Breakpoint*/
+@media (max-width:350px) and (max-height :635px ){
+
+   .wrapper{
+       height: 120vh;
+   }
+}
