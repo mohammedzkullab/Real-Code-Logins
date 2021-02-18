@@ -18,12 +18,15 @@
     <!-- Font awsome -->
     <link rel="stylesheet" href="./assets/css/all.min.css">
 
+    <!-- Animation library-->
+    <link rel="stylesheet" href="./assets/css/animate.css">
+
     <!-- Custom CSS-->
     <link rel="stylesheet" href="./assets/css/login-2.css">
 
     <!-- fav icon-->
     <link rel="shortcut icon" href="./assets/images/Dummy Logo-Logo Only.svg" type="image/x-icon">
-    
+
     <title>Login-2</title>
 
 </head>
@@ -36,8 +39,7 @@
         <!--row-->
         <div class="row">
             <!--Left side-->
-            <div
-                class="left-side d-flex flex-column justify-content-between  col-2 col-xl-4 col-md-4 col-sm-2 col-xs-2">
+            <div class="left-side d-flex flex-column justify-content-between  col-2 col-xl-4 col-md-4 col-sm-2 col-xs-2 wow fadeInLeft">
                 <!--logo-->
                 <div class="logo d-flex justify-content-start align-items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="38.4" height="38.4" viewBox="0 0 38.4 38.4">
@@ -82,7 +84,7 @@
             <!--./Left side-->
 
             <!-- right side-->
-            <div class="right-side col-10 col-xl-8 col-md-8 col-sm-10 col-xs-10 p-0">
+            <div class="right-side col-10 col-xl-8 col-md-8 col-sm-10 col-xs-10 p-0 wow fadeInRight" data-wow-delay="0.22s">
 
                 <!--form -->
 
@@ -105,7 +107,8 @@
                         <div class="form-group  position-relative">
                             <label for="email">Password</label>
 
-                            <input type="password" class="form-control" required id="inputSuccess3" placeholder="Password">
+                            <input type="password" class="form-control" required id="inputSuccess3"
+                                placeholder="Password">
                             <div class="valid-feedback feedback-icon">
                                 <i class="fa fa-check"></i>
                             </div>
@@ -133,27 +136,27 @@
 
                     </div>
 
-                     <!-- footer -->
-                <footer class="footer ">
-                    <!--down content-->
-                    <div class=" d-flex justify-content-center align-items-center flex-column pb-4 px-5 w-100">
+                    <!-- footer -->
+                    <footer class="footer ">
+                        <!--down content-->
+                        <div class=" d-flex justify-content-center align-items-center flex-column pb-4 px-5 w-100">
 
-                        <div class="logos d-flex justify-content-between align-items-center ">
-                            <img src="./assets/images/Combined Shape.svg" alt="">
-                            <img src="./assets/images/Combined Shape(1).svg" alt="">
-                            <img src="./assets/images/Combined Shape(2).svg" alt="">
+                            <div class="logos d-flex justify-content-between align-items-center ">
+                                <img src="./assets/images/Combined Shape.svg" alt="">
+                                <img src="./assets/images/Combined Shape(1).svg" alt="">
+                                <img src="./assets/images/Combined Shape(2).svg" alt="">
 
+                            </div>
                         </div>
-                    </div>
-                    <!--./down content-->
-                </footer>
-                <!--./footer -->
+                        <!--./down content-->
+                    </footer>
+                    <!--./footer -->
 
 
                 </form>
 
                 <!--./form -->
-               
+
 
 
             </div>
@@ -177,6 +180,12 @@
 
     <!-- Font awsome -->
     <script src="./assets/js/all.min.js"></script>
+
+    <!-- Animation library-->
+    <script src="./assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <!-- custom scripts -->
 

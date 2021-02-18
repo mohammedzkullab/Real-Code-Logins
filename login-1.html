@@ -18,6 +18,9 @@
     <!-- Font awsome -->
     <link rel="stylesheet" href="./assets/css/all.min.css">
 
+    <!-- Animation library-->
+    <link rel="stylesheet" href="./assets/css/animate.css">
+
     <!-- Custom CSS-->
     <link rel="stylesheet" href="./assets/css/login-1.css">
 
@@ -34,7 +37,7 @@
     <div class="container">
 
         <!--logo -->
-        <div class="logo m-auto d-flex justify-content-center align-items-center">
+        <div class="logo m-auto d-flex justify-content-center align-items-center wow fadeInDown">
             <svg xmlns="http://www.w3.org/2000/svg" width="190.912" height="64" viewBox="0 0 190.912 64">
                 <defs>
                     <style>
@@ -50,14 +53,14 @@
         <!--./logo -->
 
         <!--headers-->
-        <div class="heads">
+        <div class="heads wow fadeInDown" data-wow-delay="0.22s">
             <h1 class="heading mt-5">Sign in to your dashboard</h1>
             <h4 class="sub-heading mt-4">Enter your email address and password to continue</h4>
         </div>
         <!--./headers-->
 
         <!--form -->
-        <div class="form-container mt-5">
+        <div class="form-container mt-5 wow fadeInDown" data-wow-delay="0.44s">
             <form class=" d-flex flex-column align-items-center justify-content-center" id="myForm">
 
                 <div class="form-group  position-relative">
@@ -87,22 +90,22 @@
                     <p><a href="#" class="link">Forgot password?</a></p>
                 </div>
 
-                
+
                 <div class="footer d-flex  align-items-center mt-5">
                     <a href="" class="mr-5">Privacy & Terms</a>
                     <a href="" class="mr-5">Legal</a>
-                    <a href="" >Contact Us</a>
+                    <a href="">Contact Us</a>
                 </div>
             </form>
         </div>
         <!--./form -->
 
-        
-        
+
+
 
     </div>
     <!-- ./Main container-->
-    
+
     <!--End-->
 
 
@@ -117,6 +120,12 @@
 
     <!-- Font awsome -->
     <script src="./assets/js/all.min.js"></script>
+
+    <!-- Animation library-->
+    <script src="./assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <!-- custom scripts -->
 

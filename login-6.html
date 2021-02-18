@@ -18,6 +18,9 @@
     <!-- Font awsome -->
     <link rel="stylesheet" href="./assets/css/all.min.css">
 
+    <!-- Animation library-->
+    <link rel="stylesheet" href="./assets/css/animate.css">
+
     <!-- Custom CSS-->
     <link rel="stylesheet" href="./assets/css/login-6.css">
 
@@ -38,7 +41,7 @@
             <!--Left side-->
             <div class=" left-side d-flex flex-column justify-content-between col col-xl-7 col-md-7 col-sm-12 col-xs-12 px-5 py-4 ">
                 <!--logo-->
-                <div class="logo d-flex justify-content-start align-items-center">
+                <div class="logo d-flex justify-content-start align-items-center  wow fadeInDown" >
                     <svg xmlns="http://www.w3.org/2000/svg" width="114.912" height="38" viewBox="0 0 190.912 64">
                         <defs>
                             <style>
@@ -55,12 +58,13 @@
                 <!--./logo-->
 
                 <!--form -->
-                <div class="form-container d-flex flex-column justify-content-between align-items-center">
+                <div class="form-container d-flex flex-column justify-content-between align-items-center  wow fadeInDown" data-wow-delay="0.22s">
                     <form class=" d-flex flex-column align-items-baseline justify-content-center " id="myForm">
                         <!--headers-->
                         <div class="heads">
                             <h1 class="heading ">Login Account</h1>
-                            <h4 class="sub-heading mt-3 w-75">Try our Business account free for 30 days. Switch to Basic [Free Forever] account anytime.</h4>
+                            <h4 class="sub-heading mt-3 w-75">Try our Business account free for 30 days. Switch to Basic
+                                [Free Forever] account anytime.</h4>
                         </div>
                         <!--./headers-->
 
@@ -99,7 +103,7 @@
 
                         <div class="mt-3 w-100">
                             <div>
-                                <p >Or log in with your social media</p>
+                                <p>Or log in with your social media</p>
                             </div>
                             <div class="d-flex justify-content-around align-items-center social">
                                 <a href="#" class="social-link btn btn-primery g">G+</a>
@@ -110,7 +114,7 @@
                     </form>
                 </div>
                 <!--./form -->
-                
+
                 <!--extra-->
                 <div class=""></div>
                 <!--./extra-->
@@ -119,16 +123,14 @@
             <!--./Left side-->
 
             <!-- right side-->
-            <div class="right-side justify-content-center align-items-center col col-xl-5 col-md-5 col-sm-0 col-xs-0">
+            <div class="right-side justify-content-center align-items-center col col-xl-5 col-md-5 col-sm-0 col-xs-0  wow fadeInRight" data-wow-delay="0.5s">
                 <!--vector-->
-                <div class="d-flex justify-content-center align-items-center vector">
+                <div class="d-flex justify-content-center align-items-center vector  wow fadeInDown" data-wow-delay="0.55s">
                     <img src="./assets/images/Illustration.svg" alt="">
                 </div>
-
-
                 <!--./vector-->
                 <!--down content-->
-                <div class="down-content d-flex justify-content-between align-items-center  pr-3 pl-0  w-100 sm-hide">
+                <div class="down-content d-flex justify-content-between align-items-center  pr-3 pl-0  w-100 sm-hide  wow fadeInDown" data-wow-delay="0.65s">
                     <div>
                         <p class="smalls m-0">©2020 Our Company</p>
                     </div>
@@ -163,6 +165,12 @@
 
     <!-- Font awsome -->
     <script src="./assets/js/all.min.js"></script>
+
+    <!-- Animation library-->
+    <script src="./assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <!-- custom scripts -->
 

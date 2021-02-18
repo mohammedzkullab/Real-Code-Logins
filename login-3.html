@@ -18,6 +18,9 @@
     <!-- Font awsome -->
     <link rel="stylesheet" href="./assets/css/all.min.css">
 
+    <!-- Animation library-->
+    <link rel="stylesheet" href="./assets/css/animate.css">
+
     <!-- Custom CSS-->
     <link rel="stylesheet" href="./assets/css/login-3.css">
 
@@ -36,9 +39,9 @@
         <!--row-->
         <div class="row">
             <!--Left side-->
-            <div class=" left-side d-flex flex-column justify-content-between  col col-xl-5 col-md-5 col-sm-2 col-xs-2">
+            <div class=" left-side d-flex flex-column justify-content-between  col col-xl-5 col-md-5 col-sm-2 col-xs-2 wow fadeInLeft" >
                 <!--logo-->
-                <div class="logo d-flex justify-content-start align-items-center">
+                <div class="logo d-flex justify-content-start align-items-center  wow fadeInDown" data-wow-delay="0.11s">
                     <svg xmlns="http://www.w3.org/2000/svg" width="114.912" height="38" viewBox="0 0 190.912 64">
                         <defs>
                             <style>
@@ -56,15 +59,15 @@
 
                 <!--centered content-->
                 <div class=" d-flex justify-content-start align-items-baseline flex-column sm-hide text-left">
-                    <p class="left-head ">Welcome to Our Company</p>
-                    <p class="left-sub-head ">The Company that innovates, and is lucky will take the market
+                    <p class="left-head  wow fadeInDown" data-wow-delay="0.22s">Welcome to Our Company</p>
+                    <p class="left-sub-head  wow fadeInDown" data-wow-delay="0.29s">The Company that innovates, and is lucky will take the market
                     </p>
 
                 </div>
                 <!--./centered content-->
 
                 <!--down content-->
-                <div class="down-content d-flex justify-content-between align-items-center  pr-3 pl-0 py-3 w-100 sm-hide">
+                <div class="down-content d-flex justify-content-between align-items-center  pr-3 pl-0 py-3 w-100 sm-hide wow fadeInDown" data-wow-delay="0.35s">
                     <div>
                         <p class="smalls m-0">©2020 Our Company</p>
                     </div>
@@ -79,24 +82,23 @@
             <!--./Left side-->
 
             <!-- right side-->
-            <div class="right-side colcol-xl-7 col-md-7 col-sm-10 col-xs-10 p-0">
+            <div class="right-side colcol-xl-7 col-md-7 col-sm-10 col-xs-10 p-0 wow fadeInRight" data-wow-delay="1.0s">
 
                 <!--form -->
 
                 <form class="form-cont d-flex flex-column ">
-                    <div
-                        class="d-flex flex-column align-items-center justify-content-center m-auto w-50 form-wrapper">
-                        <div class="d-flex flex-column align-items-center justify-content-center">
+                    <div class="d-flex flex-column align-items-center justify-content-center m-auto w-50 form-wrapper">
+                        <div class="d-flex flex-column align-items-center justify-content-center wow fadeInDown" data-wow-delay="1.10s">
                             <h1 class="form-main-heading mt-4">Login Account</h1>
                             <h1 class="form-sub-heading mt-1">Enter your email address and password </h1>
                         </div>
-                        <div class="notification w-75 mt-3">
-                            <p >Hi, enter your correct username and password to continue.</p>
+                        <div class="notification w-75 mt-3 wow fadeInDown" data-wow-delay="1.15s">
+                            <p>Hi, enter your correct username and password to continue.</p>
                         </div>
 
 
-                      <div class="form-group w-75  position-relative mt-4">
-                            
+                        <div class="form-group w-75  position-relative mt-4 wow fadeInDown" data-wow-delay="1.25s">
+
                             <input type="email" class="form-control " required id="inputSuccess2"
                                 placeholder="admin@company.com">
                             <div class="valid-feedback feedback-icon">
@@ -106,9 +108,10 @@
                                 <i class="fa fa-times"></i>
                             </div>
                         </div>
-                        <div class="form-group w-75  position-relative">
-                        
-                            <input type="password" class="form-control" required id="inputSuccess3" placeholder="Password">
+                        <div class="form-group w-75  position-relative wow fadeInDown" data-wow-delay="1.25s">
+
+                            <input type="password" class="form-control" required id="inputSuccess3"
+                                placeholder="Password">
                             <div class="valid-feedback feedback-icon">
                                 <i class="fa fa-check"></i>
                             </div>
@@ -116,15 +119,15 @@
                                 <i class="fa fa-times"></i>
                             </div>
                         </div>
-                        <div class="under-form d-flex justify-content-between align-items-center w-75 mt-0  ">
-                            
+                        <div class="under-form d-flex justify-content-between align-items-center w-75 mt-0 wow fadeInDown" data-wow-delay="1.25s">
+
                             <div class="">
                                 <p class="forgot mb-0"><a href="#" class="link">Forgot password?</a></p>
                             </div>
                             <button type="submit" class="btn btn-primary  sub-btn mt-2">SIGN IN</button>
                         </div>
-                        
-                       
+
+
 
 
                     </div>
@@ -140,22 +143,22 @@
                             <a href="" class="mr-2">Legal</a>
                             <a href="">Contact Us</a>
                         </div>
-                        </div>
-                        <!--./down content-->
-                    </footer>
-                    <!--./footer -->
-
-
-                </form>
-
-                <!--./form -->
-
-
-
             </div>
-            <!-- ./right side-->
+            <!--./down content-->
+            </footer>
+            <!--./footer -->
+
+
+            </form>
+
+            <!--./form -->
+
+
+
         </div>
-        <!--./row-->
+        <!-- ./right side-->
+    </div>
+    <!--./row-->
     </div>
     <!-- ./Main container-->
 
@@ -173,6 +176,12 @@
 
     <!-- Font awsome -->
     <script src="./assets/js/all.min.js"></script>
+
+    <!-- Animation library-->
+    <script src="./assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <!-- custom scripts -->
 

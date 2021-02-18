@@ -18,12 +18,15 @@
     <!-- Font awsome -->
     <link rel="stylesheet" href="./assets/css/all.min.css">
 
+    <!-- Animation library-->
+    <link rel="stylesheet" href="./assets/css/animate.css">
+
     <!-- Custom CSS-->
     <link rel="stylesheet" href="./assets/css/login-4.css">
 
     <!-- fav icon-->
     <link rel="shortcut icon" href="./assets/images/Dummy Logo-Logo Only.svg" type="image/x-icon">
-    
+
     <title>Login-4</title>
 
 </head>
@@ -38,7 +41,7 @@
         <div class="main-cont container d-flex align-items-center justify-content-around ">
 
             <!--logo -->
-            <div class="logo ">
+            <div class="logo wow fadeIn" data-wow-delay="0.22s">
                 <svg xmlns="http://www.w3.org/2000/svg" width="190.912" height="64" viewBox="0 0 190.912 64">
                     <defs>
                         <style>
@@ -54,7 +57,7 @@
             <!--./logo -->
 
             <!--form -->
-            <div class="form-container mt-5">
+            <div class="form-container mt-5  wow fadeIn" data-wow-delay="0.66s">
                 <form class=" d-flex flex-column align-items-baseline justify-content-center" id="myForm">
                     <!--headers-->
                     <div class="heads">
@@ -136,6 +139,12 @@
 
     <!-- Font awsome -->
     <script src="./assets/js/all.min.js"></script>
+
+    <!-- Animation library-->
+    <script src="./assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <!-- custom scripts -->
 

@@ -18,6 +18,9 @@
     <!-- Font awsome -->
     <link rel="stylesheet" href="./assets/css/all.min.css">
 
+    <!-- Animation library-->
+    <link rel="stylesheet" href="./assets/css/animate.css">
+
     <!-- Custom CSS-->
     <link rel="stylesheet" href="./assets/css/login-5.css">
 
@@ -33,7 +36,7 @@
     <!-- Main container-->
     <div class="cont ">
         <!--nav -->
-        <nav class="nav d-flex justify-content-between align-items-center px-5 pt-5">
+        <nav class="nav d-flex justify-content-between align-items-center px-5 pt-5  wow fadeInDown" >
             <!--logo-->
             <div class="logo d-flex justify-content-start align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="114.912" height="38" viewBox="0 0 190.912 64">
@@ -62,7 +65,7 @@
         <div class="main-cont container d-flex justify-content-between align-items-center ">
 
             <!--left side-->
-            <div class="left-side">
+            <div class="left-side  wow fadeInDown" data-wow-delay="0.22s">
                 <!--form -->
 
                 <form class="form-cont d-flex flex-column w-75">
@@ -134,7 +137,7 @@
 
             <!-- right side-->
 
-            <div class="right-side flex-column justify-content-between  sm-hide">
+            <div class="right-side flex-column justify-content-between  sm-hide  wow fadeIn" data-wow-delay="0.66s">
 
                 <!--centered content-->
                 <div class=" d-flex justify-content-center align-items-center flex-column sm-hide">
@@ -172,6 +175,12 @@
 
         <!-- Font awsome -->
         <script src="./assets/js/all.min.js"></script>
+
+        <!-- Animation library-->
+        <script src="./assets/js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
 
         <!-- custom scripts -->
 

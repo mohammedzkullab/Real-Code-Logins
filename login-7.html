@@ -21,6 +21,9 @@
     <!-- Custom CSS-->
     <link rel="stylesheet" href="./assets/css/login-7.css">
 
+    <!-- Animation library-->
+    <link rel="stylesheet" href="./assets/css/animate.css">
+
     <!-- fav icon-->
     <link rel="shortcut icon" href="./assets/images/Dummy Logo-Logo Only.svg" type="image/x-icon">
 
@@ -33,7 +36,7 @@
     <!--nav -->
     <nav class="nav d-flex justify-content-between align-items-center px-5 pt-5">
         <!--logo-->
-        <div class="logo d-flex justify-content-start align-items-center">
+        <div class="logo d-flex justify-content-start align-items-center  wow fadeIn"data-wow-delay="0.9s" >
             <svg xmlns="http://www.w3.org/2000/svg" width="38.4" height="38.4" viewBox="0 0 38.4 38.4">
                 <defs>
                     <style>
@@ -58,14 +61,14 @@
 
         <!--headers-->
         <div class="heads">
-            <h1 class="heading mt-5">Let’s get started</h1>
-            <h4 class="sub-heading mt-4">Log in to your account so you can continue using our customer experience.</h4>
+            <h1 class="heading mt-5  wow fadeInDown" data-wow-delay="0.22s">Let’s get started</h1>
+            <h4 class="sub-heading mt-4  wow fadeInDown" data-wow-delay="0.33s">Log in to your account so you can continue using our customer experience.</h4>
         </div>
         <!--./headers-->
 
         <!--form -->
         <div class="form-container d-flex flex-column align-items-center justify-content-center pb-5 mt-5">
-            <form class=" d-flex flex-column align-items-baseline justify-content-center" id="myForm">
+            <form class=" d-flex flex-column align-items-baseline justify-content-center wow fadeInDown" data-wow-delay="0.55s" id="myForm">
                 <div class="form-row">
                     <div class="form-group col-md-6 col-sm-6">
                         <label for="inputEmail4">Email</label>
@@ -92,7 +95,8 @@
                 <div class="form-group w-100 position-relative">
                     <label for="">Password</label>
 
-                    <input type="password" class="form-control w-100" required="" id="inputSuccess3" placeholder="Password">
+                    <input type="password" class="form-control w-100" required="" id="inputSuccess3"
+                        placeholder="Password">
                     <div class="valid-feedback feedback-icon">
                         <i class="fa fa-check"></i>
                     </div>
@@ -113,7 +117,7 @@
                 <button type="submit" class="btn btn-primary sub-btn mt-2 w-100">LOG IN</button>
 
 
-                <div class="footer d-flex w-100 align-items-center mt-5">
+                <div class="footer d-flex w-100 align-items-center mt-5 wow fadeInDown" data-wow-delay="0.77s">
                     <a href="" class="mr-5">Privacy & Terms</a>
                     <a href="" class="mr-5">Legal</a>
                     <a href="">Contact Us</a>
@@ -121,9 +125,6 @@
             </form>
         </div>
         <!--./form -->
-
-
-
 
     </div>
     <!-- ./Main container-->
@@ -142,6 +143,13 @@
 
     <!-- Font awsome -->
     <script src="./assets/js/all.min.js"></script>
+
+
+    <!-- Animation library-->
+    <script src="./assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 
     <!-- custom scripts -->
 
