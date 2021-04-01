@@ -14,6 +14,16 @@ body {
   font-weight: 600;
   text-align: center;
 }
+/*sub btn*/
+.sub-btn {
+  background: #50D3DC;
+  border-radius: 8px;
+  color: #47787B;
+}
+.sub-btn:hover ,.sub-btn:checked {
+  background: #63e2e2;
+  color: #47787B;
+}
 .form-group input,
 .sub-btn {
   height: 56px;
@@ -61,6 +71,38 @@ body {
 .footer a:hover {
     color: #727575;
     text-decoration: none;
+  }
+  #loader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* background: linear-gradient(#47787B,#6fced3); */
+  }
+  
+  .circle{
+    width: 150px;
+    height: 150px;
+    background-color: #50d3dc;
+    border-radius:50%;
+    margin: 200px auto;
+    animation: animate 2s ease infinite;
+  }
+  
+  
+  @keyframes animate{
+  0%{
+        transform: scale(0.5);
+        opacity: .5;
+    }
+  50%{
+        transform: scale(2);
+        opacity: 1;
+    }
+  100%{
+        transform: scale(0.5);
+        opacity: .5;
+    }
   }
 @media (max-width:440px){
     .form-group input,
@@ -110,3 +152,5 @@ body {
 
  }
 }
+
+

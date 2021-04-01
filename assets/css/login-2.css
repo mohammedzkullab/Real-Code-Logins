@@ -12,8 +12,8 @@ body {
 /*left-side*/
 .left-side {
   height: 100vh !important;
-  background: rgba(58, 134, 255, 1);
-  opacity: 0.8;
+  background: #47787b;
+  /* opacity: 0.8; */
 }
 .logo {
   padding: 36px 40px;
@@ -39,8 +39,8 @@ body {
   padding: 14px 33px;
   width: 50%;
   font-size: 16px;
-  color: rgba(255, 255, 255, 1);
-  border: 1px solid rgba(255, 235, 224, 1);
+  color: #50d3dc;
+  border: 1px solid #50d3dc;
   border-radius: 8px;
 }
 .sign-up-btn:hover {
@@ -91,21 +91,59 @@ label {
   color: #a9a9a9;
 }
 .forgot {
-    font-size: 12px;
-    color: #3a86ff;
-  }
-  .sub-btn {
-    background: #3a86ff;
-    height: 48px;
-    padding: 7px 27px;
-    border-radius: 8px;
-  }
+  font-size: 12px;
+  color: #3a86ff;
+}
+.sub-btn {
+  background: #50D3DC;
+  border-radius: 8px;
+  color: #47787B;
+  border: none;
+  font-weight: 500;
+}
+.sub-btn:hover ,.sub-btn:checked {
+  background: #63e2e2;
+  color: #47787B;
+}
 
 .footer {
   background: rgba(58, 134, 255, 1);
   opacity: 0.8;
   display: none;
 }
+
+#loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background: linear-gradient(#47787B,#6fced3); */
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: #50d3dc;
+  border-radius: 50%;
+  margin: 200px auto;
+  animation: animate 2s ease infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
+
 /*media queries */
 
 /*1200px breakpoint*/
@@ -166,12 +204,12 @@ label {
     width: 80% !important;
   }
   .footer {
-      display: block ;
+    display: block;
   }
   .footer div {
     width: 94% !important;
     padding: 10px !important;
-}
+  }
 }
 
 /*550px breakpoint*/
@@ -180,10 +218,10 @@ label {
     width: 30px;
     height: 30px;
   }
- 
+
   .footer {
     display: none;
-}
+  }
 }
 
 /*400px breakpoint*/
@@ -191,7 +229,6 @@ label {
   .under-form {
     padding: 0 !important;
   }
- 
 }
 
 /*343px breakpoint*/

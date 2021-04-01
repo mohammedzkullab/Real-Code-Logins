@@ -6,7 +6,7 @@ body {
 }
 
 .cont {
-  background: linear-gradient(100deg, #fff 50%, rgba(40, 54, 70, 1) 50%);
+  background: linear-gradient(100deg, #fff 50%, #47787B 50%);
   height: 100vh !important;
 }
 .main-cont {
@@ -40,10 +40,19 @@ body {
   color: #3a86ff;
 }
 .sub-btn {
-  background: #3a86ff;
   height: 48px;
   padding: 7px 27px;
   border-radius: 8px;
+  background: #47787B;
+  border-radius: 8px;
+  color: #fff;
+  border: none;
+  font-weight: 500;
+}
+.sub-btn:hover,
+.sub-btn:checked {
+  background: #63e2e2;
+  color: #47787b;
 }
 .social-link {
   border: 1px solid #eceef0;
@@ -64,10 +73,12 @@ body {
   font-weight: 400;
 }
 .sign-up-btn {
-  border: 1px solid #ffebe0;
-  border-radius: 8px;
   padding: 14px 33px;
+  width: 50%;
   font-size: 16px;
+  color: #50d3dc !important;
+  border: 1px solid #50d3dc;
+  border-radius: 8px;
 }
 .sign-up-btn:hover {
   color: rgba(255, 255, 255, 1);
@@ -90,7 +101,37 @@ body {
   color: rgba(40, 54, 70, 1);
   border-color: rgba(40, 54, 70, 1);
 }
+#loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background: linear-gradient(#47787B,#6fced3); */
+}
 
+.circle {
+  width: 150px;
+  height: 150px;
+  background-color: #50d3dc;
+  border-radius: 50%;
+  margin: 200px auto;
+  animation: animate 2s ease infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+}
 
 /*Media Quries */
 
