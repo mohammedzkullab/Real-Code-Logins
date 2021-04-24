@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- Font family -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font awsome -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="./assets/css/login-8.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <!-- Animation library-->
+    <link rel="stylesheet" href="./assets/css/animate.css">
+
+    <!-- fav icon-->
+    <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
+
+    <title>Login-8</title>
+
+</head>
+
+<body>
+    <!--Start-->
+    <!--loading screen-->
+    <div id="loader" class=" justify-content-center align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="233.902" height="241.388" viewBox="0 0 233.902 241.388"
+            style="position: relative;">
+            <defs>
+                <style>
+                    #a {
+                        fill: #373b46 !important;
+                    }
+
+                    .b {
+                        fill: #50d3dc;
+                    }
+                </style>
+            </defs>
+            <g transform="translate(-304 -567.217)">
+                <g transform="translate(304 567.217)">
+                    <path id="a"
+                        d="M1961.95,1541.537c-3.467-3.468-7.939-9.946-12.5-19.256l-50.559-94.912c51.29-7.848,63.335-30.754,63.335-56.4,0-32.67-26.191-60.14-106.957-60.14H1749.13v3.559c17.43,0,26.466,7.21,27.195,21.629v176.406c.183,19.9,13.051,29.935,24.458,34.953a60.889,60.889,0,0,0,25.1,4.837l31.943-.182v-3.559c-18.07,0-27.2-8.306-27.2-24.823v-93.542h12.593s20.99,48,40.248,83.778c12.686,23.544,36.321,38.148,62.148,38.148h37.418v-3.559C1973.45,1548.656,1966.513,1546.191,1961.95,1541.537ZM1858.1,1426.731h-27.561V1314.48H1858.1c27.469,0,53.935,17.8,53.935,55.031C1912.031,1414.777,1887.938,1426.731,1858.1,1426.731Z"
+                        transform="translate(-1749.13 -1310.83)" />
+                </g>
+                <!-- <circle class="b" id="b" cx="38" cy="38" r="38" transform="translate(383 650.218)" /> -->
+            </g>
+            <span class="circle" style="position: absolute;"></span>
+        </svg>
+    </div>
+    <!--./loading screen-->
+
+    <!--wrapper-->
+    <div class="wrapper" id="your-page" style="display:none">
+
+
+        <!-- Main container-->
+        <div class="main-cont container d-flex flex-column align-items-center pl-0 pb-5">
+
+            <!--logo -->
+            <div class="logo d-flex align-items-center justify-content-center flex-column mt-5 pt-5  wow fadeInDown"
+                data-wow-delay="0.10s">
+                <svg xmlns="http://www.w3.org/2000/svg" width="121.011" height="69.166" viewBox="0 0 883.011 472.166">
+                    <defs>
+                        <style>
+                            .a {
+                                fill: #373B46 !important;
+                            }
+
+                            .b {
+                                fill: #50d3dc;
+                            }
+                        </style>
+                    </defs>
+                    <g transform="translate(-40.679 -467.316)">
+                        <g transform="translate(41 467.316)">
+                            <path class="a"
+                                d="M1403.553,1461.829q-2.418,39.893-34.069,39.855h-53.19V1382.336h24.251c12.749,0,19.122,7.62,19.122,22.785h2.71v-48.427h-2.71c0,15.165-6.374,22.785-19.122,22.785h-24.251v-65.792h50.48q31.65,0,34.068,39.855h2.711V1310.83H1250.87v2.857c14.507,0,21.832,6.667,21.832,6.007V1472.3c0,17.656,12.822,25.716,23.006,29.306a52.7,52.7,0,0,0,17.8,2.857l92.752.147V1461.9h-2.711Z"
+                                transform="translate(-994.444 -1310.83)" />
+                            <path class="a"
+                                d="M1652.255,1461.828q-2.417,39.893-33.995,39.855h-47.621V1333.615c0-13.261,7.253-19.927,21.833-19.927v-2.857H1504.92v2.857c14.726,0,22.052,6.667,22.052,19.927v140.814c.806,14.947,10.184,22.638,18.39,26.448a42.7,42.7,0,0,0,18.1,3.81l91.507-.147v-42.713Z"
+                                transform="translate(-772.275 -1310.829)" />
+                            <path class="a"
+                                d="M1919.983,1496.042c-2.784-2.784-6.374-7.985-10.037-15.458l-40.589-76.2c41.175-6.3,50.845-24.689,50.845-45.278,0-26.228-21.027-48.28-85.866-48.28H1749.13v2.857c13.993,0,21.247,5.788,21.832,17.364V1472.67c.147,15.973,10.477,24.032,19.635,28.061a48.876,48.876,0,0,0,20.147,3.883l25.644-.146v-2.857c-14.507,0-21.833-6.668-21.833-19.928v-75.1h10.109s16.851,38.538,32.311,67.257c10.184,18.9,29.159,30.625,49.893,30.625h30.039v-2.857C1929.215,1501.758,1923.646,1499.779,1919.983,1496.042Zm-83.374-92.167h-22.126V1313.76h22.126c22.052,0,43.3,14.288,43.3,44.18C1879.908,1394.279,1860.565,1403.876,1836.609,1403.876Z"
+                                transform="translate(-1749.13 -1310.829)" />
+                            <path class="a"
+                                d="M1263.114,1493.7c-.659-1.391-5.5-14.14-7.694-20.367v-.073l-44.032-141.327q-6.594-21.1-18.243-21.1h-52.6v2.857c12.528,0,21.027,6.448,25.349,19.342l2.344,7.4-44.325,141.839c-4.03,12.895-12.455,19.343-25.349,19.343v2.857h46.157v-2.857c-13.188,0-19.782-3.3-19.782-10.038a28.2,28.2,0,0,1,1.539-8.279l12.235-38.684h62.054l12.089,38.758a9.08,9.08,0,0,0,.953,1.9,38.427,38.427,0,0,0,33.481,19.268h18.975l17.364-.146v-2.858C1271.612,1501.758,1266.923,1501.39,1263.114,1493.7Zm-123.891-51.8,30.479-97,30.112,97Z"
+                                transform="translate(-615.014 -1310.829)" />
+                        </g>
+                        <g transform="translate(41 728.723)">
+                            <path class="a"
+                                d="M1265.2,1313.841q-24.862,0-35.113,32.049-6.482,20.267-6.441,70.226c0,28.908,2.042,52.16,6.128,69.6q7.658,32.639,34.485,32.678,28.633,0,52.945-21.681v4.007c-16.182,13.825-33.778,20.738-52.945,20.738q-38.884,0-63.158-30.557-24.273-30.518-24.272-74.862,0-43.714,24.587-74.547c16.339-20.58,37.549-30.871,63.471-30.871,9.19,0,17.125,1.336,23.8,3.928,19.167,7.462,27.808,4.4,28.908-2.436h2.907l-.393,47.053H1317.2a37.719,37.719,0,0,0-2.2-11.626c-4.4-13.354-12.255-22.781-23.566-28.436C1284.133,1315.727,1275.335,1313.841,1265.2,1313.841Z"
+                                transform="translate(-1177.151 -1311.008)" />
+                            <path class="a"
+                                d="M1720.965,1310.65c25.373,0,46.269,10.212,62.844,30.715q24.861,30.635,24.823,74.625,0,43.949-24.823,74.7c-16.575,20.423-37.548,30.715-62.844,30.715q-38.057,0-62.842-30.715-24.861-30.635-24.823-74.7,0-43.951,24.587-74.625Q1682.4,1310.609,1720.965,1310.65Zm0,2.984q-21.092,0-30.949,20.739c-6.6,14.061-9.976,41.241-9.976,81.538s3.3,67.478,9.976,81.539c6.6,13.825,16.969,20.738,30.949,20.738q21.093,0,30.951-20.738c6.6-14.061,9.976-41.241,9.976-81.539s-3.3-67.477-9.976-81.538C1745.318,1320.626,1735.027,1313.634,1720.965,1313.634Z"
+                                transform="translate(-1419.614 -1310.65)" />
+                            <path class="a"
+                                d="M1374.18,1340.927q-24.743-30.049-63-30.087h-99.37v3.063c15.553,0,23.409,7.15,23.409,21.367v148.622h0c0,17.36,9.82,26.158,18.7,30.558a44.019,44.019,0,0,0,19.481,4.241l37.784-.158q38.294,0,63-30.085,24.744-30.047,24.666-73.761Q1398.965,1370.971,1374.18,1340.927Zm-29.065,149.8q-11.074,24.743-33.934,24.745H1281.96V1313.9h29.221c15.238,0,26.472,8.248,33.934,24.744,4.713,10.369,6.991,35.742,6.991,76.041S1349.828,1480.358,1345.115,1490.726Z"
+                                transform="translate(-752.781 -1308.714)" />
+                            <path class="a"
+                                d="M1414.575,1472.729q-2.592,42.773-36.528,42.732h-57.03V1387.5h26c13.668,0,20.5,8.169,20.5,24.43h2.906V1360h-2.906c0,16.261-6.834,24.431-20.5,24.431h-26v-70.541h54.124q33.935,0,36.527,42.732h2.907v-45.8h-163.7v3.064c15.553,0,23.409,7.149,23.409,6.441v163.626c0,18.932,13.746,27.573,24.665,31.421a56.5,56.5,0,0,0,19.089,3.064l99.449.157v-45.8h-2.907Z"
+                                transform="translate(-534.792 -1308.705)" />
+                            <ellipse class="b" cx="38" cy="37.5" rx="38" ry="37.5"
+                                transform="translate(67.679 67.612)" />
+                        </g>
+                    </g>
+                </svg>
+                <p class="head1 mt-4 ">Login and Register Templates</p>
+            </div>
+            <!--./logo -->
+
+            <!--logins wrapper-->
+            <div class="logins-wrapper d-grid mt-5">
+
+                <!--row 1-2 -->
+                <div class="row">
+                    <!--col-->
+                    <div class="col-md-6">
+                        <img src="./assets/images/1.png" alt="" class="login-instance wow fadeInDown" data-wow-delay="0.20s">
+
+                    </div>
+                    <!--./col-->
+                    <!--col-->
+                    <div class="col-md-6">
+                        <img src="./assets/images/2.png" alt="" class="login-instance wow fadeInDown" data-wow-delay="0.30s">
+
+
+                    </div>
+                    <!--./col-->
+                </div>
+                <!--./row 1-2 -->
+
+                <!--row 3-4 -->
+                <div class="row mt-4">
+                    <!--col-->
+                    <div class="col-md-6">
+                        <img src="./assets/images/3.png" alt="" class="login-instance wow fadeInDown" data-wow-delay="0.40s">
+
+                    </div>
+                    <!--./col-->
+                    <!--col-->
+                    <div class="col-md-6">
+                        <img src="./assets/images/4.png" alt="" class="login-instance wow fadeInDown" data-wow-delay="0.50s">
+
+
+                    </div>
+                    <!--./col-->
+                </div>
+                <!--./row 3-4 -->
+
+                <!--row 5-6 -->
+                <div class="row mt-4">
+                    <!--col-->
+                    <div class="col-md-6">
+                        <img src="./assets/images/5.png" alt="" class="login-instance wow fadeInDown" data-wow-delay="0.60s">
+
+                    </div>
+                    <!--./col-->
+                    <!--col-->
+                    <div class="col-md-6">
+                        <img src="./assets/images/6.png" alt="" class="login-instance wow fadeInDown" data-wow-delay="0.70s">
+
+
+                    </div>
+                    <!--./col-->
+                </div>
+                <!--./row 5-6 -->
+
+                <!--row 7-8 -->
+                <div class="row mt-4">
+                    <!--col-->
+                    <div class="col-md-6">
+                        <img src="./assets/images/7.png" alt="" class="login-instance wow fadeInDown" data-wow-delay="0.80s">
+
+                    </div>
+                    <!--./col-->
+                    <!--col-->
+                    <div class="col-md-6">
+                        <img src="./assets/images/8.png" alt="" class="login-instance wow fadeInDown" data-wow-delay="0.90s">
+
+
+                    </div>
+                    <!--./col-->
+                </div>
+                <!--./row 7-8 -->
+
+
+
+            </div>
+            <!--./logins wrapper-->
+
+            <div class="pt-5">
+                <p class="left-sub-head">Copyright © 2021 <span><a href="" class="real-code-link">REALCODE.</a></span>  All Rights Reserved.</p>
+            </div>
+
+
+
+
+        </div>
+        <!-- ./Main container-->
+
+    </div>
+    <!-- ./wrapper-->
+
+
+    <!--End-->
+
+    <!--  Scripts  -->
+
+    <!-- JQuery-->
+    <script src="./assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap 4 -->
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Font awsome -->
+    <script src="./assets/js/all.min.js"></script>
+
+    <!-- Animation library-->
+    <script src="./assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <!-- custom scripts -->
+    <script src="./assets/js/js.js"></script>
+
+
+
+</body>
+
+</html>
