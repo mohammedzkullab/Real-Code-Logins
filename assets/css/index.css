@@ -1,0 +1,71 @@
+/*custom css*/
+body{
+    font-family: 'Rubik','sans-serif';
+}
+.head1 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #373b46;
+}
+.wrapper {
+  background-color: #c1fff7;
+}
+.login-instance {
+  width: 518px !important;
+  box-shadow: 0px 16px 27px #00000008;
+  border-radius: 10px;
+}
+.main-cont {
+  height: auto;
+}
+.left-sub-head {
+  font-size: 15px;
+  letter-spacing: 0.15px;
+  color: #9B9B9B;
+  opacity: 0.87;
+  text-align: center;
+}
+.real-code-link{
+    color: #00C8B4;
+    text-decoration: none;
+}
+
+/* media quieries */
+@media (max-width: 1200px) {
+  .login-instance {
+    width: 450px !important;
+  }
+}
+@media (max-width: 992px) {
+  .login-instance {
+    margin-top: 4rem;
+  }
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 570px) {
+  .login-instance {
+    width: 400px !important;
+    margin-top: 3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-instance {
+    width: 300px !important;
+    margin-top: 3rem;
+  }
+  .head1 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 360px) {
+  .login-instance {
+    width: 250px !important;
+  }
+  .head1 {
+    font-size: 18px;
+  }
+}
